@@ -21,6 +21,9 @@
     <ClInclude Include="sortCommon.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="swapSort.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.c">
@@ -30,6 +33,9 @@
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="insertionSort.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="swapSort.c">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

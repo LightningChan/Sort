@@ -80,11 +80,13 @@
   <ItemGroup>
     <ClInclude Include="sortCommon.h" />
     <ClInclude Include="insertionSort.h" />
+    <ClInclude Include="swapSort.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="insertionSort.c" />
     <ClCompile Include="main.c" />
     <ClCompile Include="sortCommon.c" />
+    <ClCompile Include="swapSort.c" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

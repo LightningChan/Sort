@@ -1,6 +1,7 @@
 #include<stdio.h>
 #include"sortCommon.h"
 #include"insertionSort.h"
+#include"swapSort.h"
 
 int main()
 {
@@ -11,7 +12,10 @@ int main()
 
 	//insertionSort(x, len);   //÷±Ω”≤Â»Î≈≈–Ú
 	//binaryInsertionSort(x, len);   //’€∞Î≤Â»Î≈≈–Ú
-	shellSort(x, len);
+	//shellSort(x, len);      //œ£∂˚≈≈–Ú
+
+	//bubbleSort(x, len);   //√∞≈›≈≈–Ú
+	quickSort(x, 0, len - 1);
 	printf("\n≈≈–Ú∫Û£∫");
 	printArray(x, len);
 	getchar();

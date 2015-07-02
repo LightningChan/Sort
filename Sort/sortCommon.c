@@ -1,5 +1,4 @@
 #include"sortCommon.h"
-#include<stdlib.h>
 #include<stdio.h>
 
 void printArray(int array[],int len)
