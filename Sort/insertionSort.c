@@ -1,7 +1,7 @@
 #include"insertionSort.h"
 
 /*
-Simple insertion sort.
+Simple insertion sort.£¨stable£©
 Space complexity is O(1).
 Average of time complexity is O(n^2)
 */
@@ -18,7 +18,7 @@ void insertionSort(int arr[], int len)
 }
 
 /*
-Binary insertion sort.
+Binary insertion sort.(stable)
 This algorithm can reduce times of comparison which reachs O(nlogn).
 Space complexity is O(1).
 Average of time complexity is also O(n^2)
@@ -39,5 +39,25 @@ void binaryInsertionSort(int arr[], int len)
 		for (j = i; j >high + 1; --j)
 			arr[j] = arr[j - 1];
 		arr[high + 1] = tmp;
+	}
+}
+
+/*
+Shell insertion sort.(Unstable)
+Space complexity is O(1).
+On the best case,time complexity is O(n^1.3),while on the worst case,it also is O(n^2).
+*/
+void shellSort(int arr[], int len)
+{
+	int step, i, j, tmp;
+	for (step = len / 2; step > 0; step /= 2)
+	{
+		for (i = step; i < len; i++)
+		{
+			tmp = arr[i];
+			for (j = i - step; j>=0 && tmp < arr[j]; j -= step)
+				arr[j + step] = arr[j];
+			arr[j + step] = tmp;
+		}
 	}
 }

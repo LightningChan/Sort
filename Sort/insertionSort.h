@@ -6,4 +6,7 @@ void insertionSort(int arr[], int len);
 
 /*Binary insertion sort.*/
 void binaryInsertionSort(int arr[], int len);
+
+/*Shell insertion sort*/
+void shellSort(int arr[], int len);
 #endif
