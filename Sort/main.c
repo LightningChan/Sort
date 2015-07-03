@@ -2,6 +2,7 @@
 #include"sortCommon.h"
 #include"insertionSort.h"
 #include"swapSort.h"
+#include"selectionSort.h"
 
 int main()
 {
@@ -15,7 +16,10 @@ int main()
 	//shellSort(x, len);      //œ£∂˚≈≈–Ú
 
 	//bubbleSort(x, len);   //√∞≈›≈≈–Ú
-	quickSort(x, 0, len - 1);
+	//quickSort(x, 0, len - 1);    //øÏÀŸ≈≈–Ú
+
+	//selectionSort(x, len);     //ºÚµ•—°‘Ò≈≈–Ú
+	heapSort(x,len);
 	printf("\n≈≈–Ú∫Û£∫");
 	printArray(x, len);
 	getchar();

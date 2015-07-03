@@ -44,6 +44,11 @@ int partition(int arr[], int low, int high)
 	return low;
 }
 
+/*
+Quick sort.(Unstable)
+Space complexity is O(logn).
+Time complexity is O(nlogn).
+*/
 void quickSort(int arr[], int low, int high)
 {
 	int pivotloc = 0;
