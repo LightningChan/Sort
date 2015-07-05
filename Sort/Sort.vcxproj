@@ -78,6 +78,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="mergeSort.h" />
     <ClInclude Include="selectionSort.h" />
     <ClInclude Include="sortCommon.h" />
     <ClInclude Include="insertionSort.h" />
@@ -86,6 +87,7 @@
   <ItemGroup>
     <ClCompile Include="insertionSort.c" />
     <ClCompile Include="main.c" />
+    <ClCompile Include="mergeSort.c" />
     <ClCompile Include="selectionSort.c" />
     <ClCompile Include="sortCommon.c" />
     <ClCompile Include="swapSort.c" />
