@@ -22,7 +22,8 @@ int main()
 	//selectionSort(x, len);     //ºÚµ•—°‘Ò≈≈–Ú
 	//heapSort(x,len);          //∂—≈≈–Ú
 
-	mergeSortByRecursion(x, 0, len-1);
+	//mergeSortByRecursion(x, 0, len-1);
+	merge_sort(x, len);
 	printf("\n≈≈–Ú∫Û£∫");
 	printArray(x, len);
 	getchar();

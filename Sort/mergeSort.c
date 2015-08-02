@@ -47,3 +47,38 @@ void mergeSortByRecursion(int arr[], int start, int end)
 	}
 	
 }
+
+
+/**
+* merge_sort: 非递归实现 --迭代
+* 非递归思想: 将数组中的相邻元素两两配对。用merge函数将他们排序，
+* 构成n/2组长度为2的排序好的子数组段，然后再将他们排序成长度为4的子数组段，
+* 如此继续下去，直至整个数组排好序。
+* 时间复杂度是O（nlogn)
+**/
+void merge_sort(int arr[], int length)
+{
+	int step, left_min, left_max, right_min, right_max, next;
+	int *tmp = (int *)malloc(sizeof(int)*length);
+
+	for (step = 1; step < length;step*=2)
+	{
+		for (left_min = 0; left_min < length - step; left_min = right_max)
+		{
+			right_min = left_max = left_min + step;
+			right_max = left_max + step;
+			if (right_max>length)
+				right_max = length;
+			next = 0;
+			while (left_min < left_max&&right_min<right_max)
+				tmp[next++] = arr[left_min]>arr[right_min] ? arr[right_min++] : arr[left_min++];
+			while (left_min < left_max)
+				arr[--right_min] = arr[--left_max];
+			while (next>0)
+				arr[--right_min] = tmp[--next];
+		}
+		
+	}
+	free(tmp);
+
+}
